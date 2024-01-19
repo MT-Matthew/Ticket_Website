@@ -1,0 +1,308 @@
+body {
+    background: linear-gradient(110deg, #BBDEFB 60%, #42A5F5 60%);
+}
+
+.shop {
+    font-size: 10px;
+}
+
+.space {
+    letter-spacing: 0.8px !important;
+}
+
+.second a:hover {
+    color: rgb(92, 92, 92);
+}
+
+.active-2 {
+    color: rgb(92, 92, 92)
+}
+
+
+.breadcrumb>li+li:before {
+    content: "" !important
+}
+
+.breadcrumb {
+    padding: 0px;
+    font-size: 10px;
+    color: #aaa !important;
+}
+
+.first {
+    background-color: white;
+}
+
+a {
+    text-decoration: none !important;
+    color: #aaa;
+}
+
+.btn-lg,
+.form-control-sm:focus,
+.form-control-sm:active,
+a:focus,
+a:active {
+    outline: none !important;
+    box-shadow: none !important
+}
+
+.form-control-sm:focus {
+    border: 1.5px solid #4bb8a9;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    padding: .5rem 0.1rem;
+    font-size: 1rem;
+    border-radius: 0;
+    color: white !important;
+    background-color: #4bb8a9;
+    height: 2.8rem !important;
+    border-radius: 0.2rem !important;
+}
+
+.btn-group-lg>.btn:hover,
+.btn-lg:hover {
+    background-color: #26A69A;
+}
+
+.btn-outline-primary {
+    background-color: #fff !important;
+    color: #4bb8a9 !important;
+    border-radius: 0.2rem !important;
+    border: 1px solid #4bb8a9;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4bb8a9 !important;
+    color: #fff !important;
+    border: 1px solid #4bb8a9;
+}
+
+.card-2 {
+    margin-top: 40px !important;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 0px solid #aaaa !important;
+}
+
+p {
+    font-size: 13px;
+}
+
+.small {
+    font-size: 9px !important;
+}
+
+.form-control-sm {
+    height: calc(2.2em + .5rem + 2px);
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.boxed {
+    padding: 0px 8px 0 8px;
+    background-color: #4bb8a9;
+    color: white;
+}
+
+.boxed-1 {
+    padding: 0px 8px 0 8px;
+    color: black !important;
+    border: 1px solid #aaaa;
+}
+
+.bell {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .breadcrumb-item+.breadcrumb-item {
+        padding-left: 0
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container {
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.container form {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+}
+
+.container form .inputBox {
+    margin-top: 20px;
+}
+
+.container form .inputBox span {
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+.container form .inputBox input,
+.container form .inputBox select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: #444;
+}
+
+.container form .flexbox {
+    display: flex;
+    gap: 15px;
+}
+
+.container form .flexbox .inputBox {
+    flex: 1 1 150px;
+}
+
+.container form .submit-btn {
+    width: 100%;
+    background: linear-gradient(45deg, blueviolet, deeppink);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.container form .submit-btn:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.container .card-container {
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.container .card-container .front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, blueviolet, deeppink);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    padding: 20px;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
+}
+
+.container .card-container .front .image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.container .card-container .front .image img {
+    height: 50px;
+}
+
+.container .card-container .front .card-number-box {
+    padding: 30px 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.container .card-container .front .flexbox {
+    display: flex;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1) {
+    margin-right: auto;
+}
+
+.container .card-container .front .flexbox .box {
+    font-size: 15px;
+    color: #fff;
+}
+
+.container .card-container .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, blueviolet, deeppink);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
+}
+
+.container .card-container .back .stripe {
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.container .card-container .back .box {
+    padding: 0 20px;
+}
+
+.container .card-container .back .box span {
+    color: #fff;
+    font-size: 15px;
+}
+
+.container .card-container .back .box .cvv-box {
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.container .card-container .back .box img {
+    margin-top: 30px;
+    height: 30px;
+}
